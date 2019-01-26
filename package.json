@@ -1,0 +1,38 @@
+{
+  "name": "skylark-virtualdom",
+  "description": "A version of virtual-dom that ported to running on skylarkjs.",
+  "version": "0.9.0",
+  "keywords": [
+    "skylark",
+    "framework",
+    "vue"
+  ],
+  "homepage": "https://github.com/skylark-integration/skylark-virtualdom/",
+  "author": "Hudaokeji, Inc.",
+  "scripts": {
+    "build": "sbundle build ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skylark-integration/skylark-virtualdom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skylark-integration/skylark-virtualdom/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "skylark-langx": "git+https://github.com/skylarklangx/skylark-langx.git#master"
+  },
+
+  "skylarkjs": {
+    "build": {
+      "prepare": {
+        "cjstoamd": true
+      }
+    }
+  },
+    
+  "engines": {
+    "node": ">=0.10.1"
+  }
+}
